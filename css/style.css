@@ -1,15 +1,20 @@
 body {
-    background: url("../images/battleField4.jpg") no-repeat center center fixed;
+    background: url("../images/battleField5.jpg") no-repeat center center fixed;
     margin: 0;
     padding: 0;
     background-color: black;
     background-size: cover;
 }
 
+.overlay {
+   /* background:black;
+    opacity: 9; */
+}
+
 h1 {
     font-size: 72px;
     margin: 0;
-    color: red;
+    color: ghostwhite;
     padding-top: 10px;
 }
 
@@ -62,7 +67,7 @@ img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin: 15px;
+    margin: 25px;
 }
 
 .redGoku {
@@ -105,8 +110,6 @@ img {
     height: 100px;
     background-color: ghostwhite;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .dragonBall2, 
@@ -117,9 +120,9 @@ img {
     height: 100px;
     background-color: ghostwhite;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
 }
 
 .dragonBall5 {
@@ -128,8 +131,6 @@ img {
     height: 100px;
     background-color: ghostwhite;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 button {
