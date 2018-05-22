@@ -1,5 +1,5 @@
 body {
-    background: url("../images/battleField.jpg") no-repeat center center fixed;
+    background: url("../images/battleField4.jpg") no-repeat center center fixed;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -7,7 +7,16 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 72px;
+    margin: 0;
+    color: red;
+    padding-top: 10px;
+}
+
+.player {
+    color: ghostwhite;
+    font-style: bold;
+    font-size: 32px;
     margin: 0;
 }
 
@@ -25,9 +34,11 @@ h1 {
     
 }
 
-h1, h2, h3 {
+h1, 
+.player, 
+.score,
+.btn {
     font-family: 'Cormorant', serif;
-    color: ghostwhite;
 }
 
 #container {
@@ -90,9 +101,9 @@ img {
 
 .dragonBall1 {
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background-color: black;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -102,9 +113,9 @@ img {
 .dragonBall3, 
 .dragonBall4 {
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background-color: black;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -113,9 +124,9 @@ img {
 
 .dragonBall5 {
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background-color: black;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
