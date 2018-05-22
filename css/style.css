@@ -6,13 +6,18 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
 .clear {
     clear: both;
 }
 
 #container {
     margin: 0;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 .gameTitle {
@@ -22,47 +27,107 @@ body {
 
 h1, h2, h3 {
     font-family: 'Cormorant', serif;
-    
+    color: ghostwhite;
+}
+
+#container {
+    margin: 0;
+    text-align: center;
 }
 
 .gameContent {
-    margin-left: 22%;
+    /* margin-left: 22%;
     margin-right: 22%;
-    width: 66%;
-    padding: 0;
+    width: 56%; 
+    padding: 0; 
+    margin: 0;
+    text-align: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
 }
 
 .redGoku {
-    /* border: 2px solid red; */
-    float: left;
+    /* border: 2px solid red; 
+    float: left; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greenVegeta {
-    /* border: 2px solid green; */
-    float: left;
+    /* border: 2px solid green; 
+    float: left; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blueTrunks {
-    /* border: 2px solid green; */
-    float: left;
+    /* border: 2px solid green; 
+    float: left; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .yellowFrieza {
-    /* border: 2px solid yellow; */
-    float: left;
+    /* border: 2px solid yellow; 
+    float: left; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Place holder colors until I have the dragon balls edited. */
+
+.dragonBall1 {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dragonBall2, 
+.dragonBall3, 
+.dragonBall4 {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.dragonBall5 {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
-    width: 40%;
+    /* width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     height: 25px;
-    margin-top: 10px;
+    margin-top: 10px;  */
+    float: right;
+    margin-right: 25%;
+    margin-bottom: 25px; 
 }
