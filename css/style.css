@@ -6,9 +6,8 @@ body {
     background-size: cover;
 }
 
-.overlay {
-   /* background:black;
-    opacity: 9; */
+#level {
+    color: ghostwhite;
 }
 
 h1 {
@@ -104,12 +103,29 @@ img {
 
 /* Place holder colors until I have the dragon balls edited. */
 
+#redCircle {
+    background: red;
+}
+
+#greenCircle {
+    background: green;
+}
+
+#blueCircle {
+    background: blue;
+}
+
+#yellowCircle {
+    background: yellow;
+}
+
 .dragonBall1 {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: ghostwhite;
     display: inline-block;
+    margin-top: -20px;
 }
 
 .dragonBall2, 
