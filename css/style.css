@@ -6,10 +6,6 @@ body {
     background-size: cover;
 }
 
-#level {
-    color: ghostwhite;
-}
-
 .msg1,
 .msg2 {
     color: ghostwhite;
@@ -18,8 +14,12 @@ body {
 h1 {
     font-size: 72px;
     margin: 0;
-    color: rgb(200, 214, 214);
+    color: ghostwhite;
     padding-top: 10px;
+}
+
+.border {
+    background-color: rgb(211, 111, 30);
 }
 
 .player {
