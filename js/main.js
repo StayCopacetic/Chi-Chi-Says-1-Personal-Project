@@ -32,6 +32,7 @@ var Game=(function(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
         $(".msg1").html("GAME");
         $(".msg2").html("OVER");
+        alert("Your power levels are too low, Game Over!");
         return false;
       } else if(userSequence.length==sequence.length) {
         $(".msg1").html(sequence.length)
@@ -50,7 +51,7 @@ var Game=(function(){
 // Highlight the colors and dehighlights as the game continues.     
     function highlight(){
       $(this)
-        .addClass('hl .circle animated bounce');
+        .addClass('hl .animated bounce .circle');
       setTimeout(dehighlight.bind(this),500);
     }
 
