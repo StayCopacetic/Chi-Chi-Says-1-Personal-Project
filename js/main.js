@@ -18,9 +18,9 @@ function switchTurns() {
     } else {
         // compare player1.score and player2.score and announce the winner
         if(player1.score > player2.score) {
-            alert("You've won player 1 :)")
+            alert("Player 1 win! Your power levels are over 9000.")
         } else if(player2.score > player1.score) {
-            alert("You've won player 2 :)")
+            alert("Player 2 win! Your power levels are over 9000.")
         } else {
             alert("Tie game!")
         }
@@ -61,21 +61,19 @@ var Game=(function(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
         $(".msg1").html("GAME");
         $(".msg2").html("OVER");
-        alert("Your power levels are too low, Game Over!");
+        alert("Are you power levels high enough to win?");
+        switchTurns();
+        start();
         return false;
-      } else if(userSequence.length == sequence.length) { // This is just one player.
+      } else if(userSequence.length == sequence.length) { 
+        currentPlayer.score++;
         $(".msg1").html(sequence.length)
         addNextSequence();
         userSequence=[];
-        setTimeout(playSequence,1000);
+        setTimeout(playSequence,2000);
         return true;
       }
     }
-
-    // function switchTurns() {
-    //     if(currentPlayer === player1) {
-    //         currentPlayer = player2
-    //     }
 
 // Game logic for the various sequences.    
     function addNextSequence(){
