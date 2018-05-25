@@ -1,6 +1,6 @@
-#Chi-Chi Says
+# Chi-Chi Says
 
-##Game
+## Game
 
 * I created this game, which has the same premise as Simon Says. Instead of the traditional game layout, I incorporated one of my favorite TV shows Dragon Ball Z. 
 
