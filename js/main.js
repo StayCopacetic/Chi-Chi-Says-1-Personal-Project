@@ -1,3 +1,5 @@
+var $title = $('.gameTitle h1')
+
 var player1 = {
     name: "PLAYER 1",
     score: 0,
@@ -15,6 +17,8 @@ var currentPlayer = player1
 function switchTurns() {
     if(currentPlayer === player1) {
         currentPlayer = player2
+        $title.text("Player 2 get ready...");
+        setTimeout(start, 3000);
     } else {
         // compare player1.score and player2.score and announce the winner
         if(player1.score > player2.score) {
@@ -27,7 +31,7 @@ function switchTurns() {
     }
 }
 
-var Game=(function(){
+// var Game=(function(){
     var faces=$("#gameContent .circle");
     var sequence=[];
     var userSequence=[];
@@ -61,9 +65,7 @@ var Game=(function(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
         $(".msg1").html("GAME");
         $(".msg2").html("OVER");
-        alert("Are you power levels high enough to win?");
         switchTurns();
-        start();
         return false;
       } else if(userSequence.length == sequence.length) { 
         currentPlayer.score++;
@@ -96,10 +98,10 @@ var Game=(function(){
         setTimeout(highlight.bind(faces.eq(sequence[i])),i*400);
       }
     }
-    return {
-      init:init,
-      start:start};
-  })();
+    // return {
+    //   init:init,
+    //   start:start};
+//   })();
   
-  Game.init();
-  Game.start();
+init();
+// start();

@@ -1,6 +1,6 @@
-#Chi-Chi Says
+# Chi-Chi Says
 
-##Game
+## Game
 
 * I created this game, which has the same premise as Simon Says. Instead of the traditional game layout, I incorporated one of my favorite TV shows Dragon Ball Z. 
 
@@ -15,3 +15,5 @@
 * To build this game I used HTML, CSS, JavaScript, jQuery. I incorporated Animate.css, normalize.css, jQuery library, and fonts from Google Fonts.
 
 * Backlog: The most pressing issue I faced was figuring out the logic side of the game and ensuring it would switch off to the second player properly. 
+
+* Please see link for wireframe - https://trello.com/b/v1Jf4YdU
