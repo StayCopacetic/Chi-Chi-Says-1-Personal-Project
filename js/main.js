@@ -32,8 +32,6 @@ var Game=(function(){
     var sequence=[];
     var userSequence=[];
 
-    
-
  // Click button to start the game.   
     function init(){
       makeFacesClickable();
@@ -58,14 +56,14 @@ var Game=(function(){
       });
     }
 
-// When the correct color is clicked the user's score is increased by one and if incorrect, the game is ended.     
+// When the correct color is clicked the user's score is increased by one and if incorrect, the game is ended. I MAY NEED TO REWRITE THE CODE BELOW.    
     function checkUserSequence(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
         $(".msg1").html("GAME");
         $(".msg2").html("OVER");
         alert("Your power levels are too low, Game Over!");
         return false;
-      } else if(userSequence.length==sequence.length) {
+      } else if(userSequence.length == sequence.length) { // This is just one player.
         $(".msg1").html(sequence.length)
         addNextSequence();
         userSequence=[];
@@ -74,6 +72,11 @@ var Game=(function(){
       }
     }
 
+    // function switchTurns() {
+    //     if(currentPlayer === player1) {
+    //         currentPlayer = player2
+    //     }
+
 // Game logic for the various sequences.    
     function addNextSequence(){
       sequence.push(Math.floor(Math.random()*4));
@@ -81,16 +84,15 @@ var Game=(function(){
 
 // Highlight the colors and dehighlights as the game continues.     
     function highlight(){
-      $(this)
-        .addClass('hl .animated bounce .circle');
-      setTimeout(dehighlight.bind(this),500);
+      $(this).addClass('hl .animated flip .circle');
+      setTimeout(dehighlight.bind(this),300);
     }
 
     function dehighlight(){
       $(this)
         .removeClass('hl');
     }
-
+    
     function playSequence(){
       for(var i=0;i<sequence.length;i++) {
         setTimeout(highlight.bind(faces.eq(sequence[i])),i*400);
