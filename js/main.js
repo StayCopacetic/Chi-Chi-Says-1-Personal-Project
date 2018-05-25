@@ -83,7 +83,7 @@ var Game=(function(){
 // Highlight the colors and dehighlights as the game continues.     
     function highlight(){
       $(this).addClass('hl .animated flip .circle');
-      setTimeout(dehighlight.bind(this),300);
+      setTimeout(dehighlight.bind(this),200);
     }
 
     function dehighlight(){

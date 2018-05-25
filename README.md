@@ -8,10 +8,10 @@
 
 * Your mind will be tested and we'll see who comes out as the champion of the ring. 
 
-* Rules are simple and straight forward. Remember more color sequences than who you're facing off with. Your mind depends on it.
+* Rules are simple and straight forward. Remember more color sequences than your opponent. Your mind depends on it.
 
-* Controls are simple too. When the game displays the various colors, click the colors in the ordered they were presented. 
+* Controls are simple too. When the game displays the various colors, click the color in the ordered it was presented. 
 
-* To build this game I used HTML, CSS, JavaScript, jQuery on the code side. I incorporated Animate.css, normalize.css, jQuery library, and fonts from Google Fonts.
+* To build this game I used HTML, CSS, JavaScript, jQuery. I incorporated Animate.css, normalize.css, jQuery library, and fonts from Google Fonts.
 
 * Backlog: The most pressing issue I faced was figuring out the logic side of the game and ensuring it would switch off to the second player properly. 
