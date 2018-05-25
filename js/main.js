@@ -63,8 +63,8 @@ function switchTurns() {
 // Provides alerts and stores user's score to compare with the other player.    
     function checkUserSequence(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
-        $(".msg1").html("GAME");
-        $(".msg2").html("OVER");
+        $(".msg1").html("Game");
+        $(".msg2").html("Over");
         switchTurns();
         return false;
       } else if(userSequence.length == sequence.length) { 

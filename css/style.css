@@ -73,7 +73,7 @@ h1,
 }
 
 #gameContent .circle {
-    opacity: .3;
+    opacity: .5;
     cursor: pointer;
 }
 
@@ -145,11 +145,11 @@ img {
     height: 100px;
     background-color: ghostwhite;
     display: inline-block;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 .dragonBall3 {
-   /* background: orangered; */
+    background: gold;
     border-radius: 50%;
     width: 100px;
     height: 100px;
