@@ -56,7 +56,7 @@ var Game=(function(){
       });
     }
 
-// When the correct color is clicked the user's score is increased by one and if incorrect, the game is ended. I MAY NEED TO REWRITE THE CODE BELOW.    
+// Provides alerts and stores user's score to compare with the other player.    
     function checkUserSequence(){
       if(userSequence.join('')!=sequence.slice(0,userSequence.length).join('')) {
         $(".msg1").html("GAME");
