@@ -149,12 +149,16 @@ img {
 }
 
 .dragonBall3 {
-    background-color: black;
-    background: black;
+    background: orangered;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.dragonBall2, 
-.dragonBall3, 
+.dragonBall2,  
 .dragonBall4 {
     border-radius: 50%;
     width: 100px;
