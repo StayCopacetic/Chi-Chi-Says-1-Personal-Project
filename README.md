@@ -21,3 +21,8 @@
 ## Wireframe 
 
 ![](/Users/staycopacetic/Desktop/Dragon_Ball_Z_Project/Framework/Original Game Idea.jpeg)
+
+## Trello:
+
+* https://trello.com/b/v1Jf4YdU
+
