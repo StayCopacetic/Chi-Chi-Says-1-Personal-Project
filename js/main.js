@@ -34,7 +34,7 @@ var Game=(function(){
 
  // Click button to start the game.   
     function init(){
-      makeFacesClickable();
+      makeColorsClickable();
       $(".btn").on('click',start);
     }
 
@@ -48,7 +48,7 @@ var Game=(function(){
     }
     
 // Function so that you'll be able to click the colors in the correct sequence.    
-    function makeFacesClickable(){
+    function makeColorsClickable(){
       faces.on('click',function(){
         highlight.call($(this));
         userSequence.push($(this).index("#gameContent .circle"));
